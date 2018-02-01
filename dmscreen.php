@@ -390,31 +390,6 @@ if (isset($_POST['selectedCampaign'])) {
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
-                        Campaign Related
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="nav-link dropdown-item"
-                           href="https://drive.google.com/open?id=0B2BXhrFHwVfSNUVlVXd0a0xoQTg" target="_blank">Old
-                            Empire Map</a>
-                        <a class="nav-link dropdown-item"
-                           href="https://drive.google.com/open?id=0B2BXhrFHwVfSSko1T0ZoLWNTc0E" target="_blank">Arconis
-                            Map</a>
-                        <a class="nav-link dropdown-item"
-                           href="https://drive.google.com/open?id=0B2BXhrFHwVfSNlZrSExFdTM4a2c" target="_blank">Wailing
-                            Marshes
-                            Map</a>
-                        <a class="nav-link dropdown-item"
-                           href="https://drive.google.com/open?id=1mkqyEIj7D5kvQk8gXg001Z0E2m4OVNZktInETK8UjsQ"
-                           target="_blank">Wasteland Bestiary</a>
-                        <a class="nav-link dropdown-item" href="http://simp.ly/p/X8Bqgr" target="_blank">Custom
-                            Enemies</a>
-                        <a class="nav-link dropdown-item" href="http://simp.ly/p/M81tdX" target="_blank">Wailing Marshes
-                            Notes</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
                         Fumbles
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
