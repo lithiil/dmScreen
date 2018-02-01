@@ -1,0 +1,458 @@
+@media screen and (max-width: 1000px) {
+    html {
+        zoom: 70%;
+    }
+}
+
+@font-face {
+    font-family: 'medieval'; /*a name to be used later*/
+    src: url('Enchanted Land.otf'); /*URL to font*/
+}
+
+body {
+    /*font-family: medieval;*/
+    /*font-size: 30px;*/
+    background: url("dark.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.charName {
+    font-family: medieval;
+    font-size: 40px;
+}
+.charStatus {
+    font-family: medieval;
+    font-size: 30px;
+}
+
+h3 {
+    color: cornflowerblue;
+}
+
+h5 {
+    text-align: center;
+    width: 100%;
+}
+
+a {
+    color: forestgreen;
+}
+
+a:hover {
+    color: lime;
+}
+
+.flex-container {
+    display: flex !important;
+}
+.flex-wrap {
+    flex-wrap: wrap !important;
+}
+.flex-container p {
+    width: 100% !important;
+    text-align:center;
+}
+.flex-container h3 {
+    width: 100% !important;
+    text-align:center;
+}
+.form-inline .form-control {
+    /* width: 15% !important; */
+}
+
+.char-container {
+    text-align: center;
+    padding-top: 10px;
+    overflow: hidden;
+
+}
+.input-group-sm-2 {
+    background-color: rgba(148, 183, 239,0.2);
+    color: gray;
+    transition-timing-function: ease-out;
+    transition: 1.5s;
+}
+
+.input-group-sm-2:hover {
+    background-color: rgba(184, 199, 224,0.4);
+    color: lime;
+    border-color: lime;
+    transition-timing-function: ease-in;
+    transition: 0.25s;
+}
+
+.input-group-sm-2:focus {
+    background-color: rgba(184, 199, 224,0.4);
+    border-color: lime;
+    color: lime;
+}
+
+.input-group-sm-2:read-only {
+    background-color: rgba(148, 183, 239,0.2);
+    color: gray;
+    transition-timing-function: ease-out;
+    transition: 1.5s;
+}
+
+.statLabel {
+    font-family: medieval;
+    font-size: 25px;
+}
+
+.char-container .statLabel {
+    font-weight: 500;
+    padding-right: 10px;
+    padding-left: 5px;
+    width: 40% !important;
+    color: gray;
+}
+.char-container input {
+    height: 30px;
+    width: 25%
+}
+
+.ini-container {
+    width: 33%;
+}
+.ini-container .statLabel {
+    font-weight: 500;
+    padding-right: 10px;
+    padding-left: 5px;
+    width: 50% !important;
+    color: forestgreen;
+}
+.ini-container input {
+    height: 30px;
+    width: 25% !important;
+    border-left: 10px inset;
+    border-left-color: rgba(34, 139, 34,0.5);
+}
+
+.gold-container {
+    width: 33%;
+}
+
+.gold-container .statLabel {
+    font-weight: 500;
+    padding-right: 10px;
+    padding-left: 5px;
+    width: 50% !important;
+    color: gold;
+}
+.gold-container input {
+    height: 30px;
+    width: 25% !important;
+    border-left: 10px inset;
+    border-left-color: rgba(255, 221, 26, 0.5);
+}
+
+.xp-container {
+    width: 33%;
+}
+
+.xp-container .statLabel {
+    font-weight: 500;
+    padding-right: 10px;
+    padding-left: 5px;
+    width: 50% !important;
+    color: cornflowerblue;
+
+}
+.xp-container input {
+    height: 30px;
+    width: 25% !important;
+    border-left: 10px inset;
+    border-left-color: rgba(100, 149, 237, 0.5);
+}
+
+.btn-container {
+    text-align: center;
+    width: 100%;
+    margin-left: 40%;
+    margin-right: 30%;
+    padding-bottom: 20px;
+
+}
+
+#butondemuie {
+    font-family: medieval;
+    font-size: 25px;
+    width: 50%;
+    height: 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: rgba(34,139,34,0.4);
+    transition-timing-function: ease-out;
+    transition: 0.5s;
+}
+
+#butondemuie:hover {
+    background-color: rgba(34,139,34,0.7);
+    width: 70%;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+
+#butondecreat {
+    font-family: medieval;
+    font-size: 25px;
+    width: 20%;
+    height: 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 204, 0,0.4);
+    transition-timing-function: ease-out;
+    transition: 0.5s;
+    position: inherit;
+    left: 33%;
+}
+
+#butondecreat:hover {
+    background-color: rgba(255, 204, 0,0.7);
+    width: 35%;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+
+#butondesters {
+    font-family: medieval;
+    font-size: 25px;
+    width: 23%;
+    height: 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: rgba(230, 0, 0,0.4);
+    transition-timing-function: ease-out;
+    transition: 0.5s;
+    position: inherit;
+    left: 33%;
+}
+
+#butondesters:hover {
+    background-color: rgba(230, 0, 0,0.7);
+    width: 35%;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+
+#createCampaignButton {
+    font-family: medieval;
+    font-size: 25px;
+    width: 23%;
+    height: 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: rgba(230, 0, 0,0.4);
+    transition-timing-function: ease-out;
+    transition: 0.5s;
+    position: inherit;
+    left: 33%;
+}
+
+#createCampaignButton:hover {
+    background-color: rgba(230, 0, 0,0.7);
+    width: 35%;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+
+.links-container {
+    font-family: medieval;
+    font-size: 25px;
+    width: 100%;
+}
+
+.half-rule {
+    margin-left: 7%;
+    text-align: left;
+    width: 85%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: rgba(85, 186, 48, 0.2);
+}
+
+.stats-rule {
+    text-align: left;
+}
+
+.mainstats {
+    border-left: 10px inset;
+    border-left-color: rgba(0, 255, 0, 0.5);
+    min-width: 35%;
+    max-width: 50%;
+}
+
+.stats {
+    max-width: 25%;
+    border-left: 10px inset;
+    border-left-color: rgba(255, 140, 0, 0.5);
+}
+
+.damagestats {
+    border-left: 10px inset;
+    border-left-color: rgba(139, 0, 0, 0.5);
+    max-width: 25%;
+}
+
+.saves {
+    max-width: 25%;
+    border-left: 10px inset;
+    border-left-color: rgba(135, 206, 250, 0.5);
+}
+
+.bab {
+    max-width: 50%;
+    border-left: 10px inset;
+    border-left-color: rgba(139, 0, 0, 0.5);
+}
+
+.notes {
+    text-align: left;
+    font-size: 12px;
+    min-width: 50%;
+    min-height: 70px;
+    word-wrap: break-word;
+}
+
+.navbar-custom {
+    background-color: rgba(0,0,0, 0.1);
+    transition-timing-function: ease-out;
+    transition: 0.5s;
+}
+
+.navbar-custom:hover {
+    background-color: rgba(0,0,0, 0.8);
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: rgb(255,255,255);
+}
+
+/* for dropdown only - change the color of droodown */
+.navbar-custom .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition-timing-function: ease-out;
+    transition: 0.5s;
+}
+
+.navbar-custom .dropdown-menu:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+.navbar-custom .dropdown-item {
+    color: rgb(255,255,255);
+
+}
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    color: rgb(255,255,255);
+    background-color: rgba(255,255,255,.5);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    text-align: center;
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width:20%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    color: lime;
+    font-size: 36px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    overflow: visible;
+    transition: all 0.3s ease-in;
+    background-color: rgba(0,0,0,0.2)
+
+}
+.modal-content:hover,
+.modal-content:focus{
+    border-color: lime;
+    box-shadow: 0px 0px 40px #1aff1a;
+    transition: all 0.3s ease-out;
+    background-color: rgba(0,0,0,0.8)
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: black;
+    color: cadetblue;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.4);
+
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+/* The Close Button */
+.close {
+    color: lime;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+    text-align: center;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.modal input {
+    width: 100%;
+}
+
+.footerText {
+    text-align: center;
+    color: #1aff1a;
+    font-family: medieval;
+    font-size: 30px;
+
+}

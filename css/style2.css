@@ -1,0 +1,33 @@
+.col-ml-2 {
+    text-align: center;
+    padding-top: 50px;
+    overflow: hidden;
+    border-left:1px dashed #CC0000;
+    border-right:1px dashed #CC0000;
+}
+.damage {
+
+}
+.hp {
+    width: 50%;
+}
+.statLabel {
+    font-weight: 500;
+    padding-right: 10px;
+    padding-left: 5px;
+    width: 45% !important;
+}
+.form-inline .form-group input {
+    height: 30px;
+    width:50px;
+}
+.charName {
+    width: 100%;
+}
+#damage {
+    width: 50%;
+}
+
+#hp {
+    width: 50%;
+}
