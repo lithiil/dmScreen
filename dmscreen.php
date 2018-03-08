@@ -4,6 +4,9 @@
  */
 session_start();
 
+// Change the value of this variable with the link of the dm screen page ex: http://localhost/dmscreen/dmscreen.php
+$refreshLink = 'http://localhost';
+
 // Scan the files found in jsons/ and list them for the user in the Campaigns dropdown
 $path = 'jsons/';
 
@@ -65,7 +68,7 @@ if (isset($_POST['submit1'])) {
 
     file_put_contents($path . $selectedCampaign, json_encode($newPlayers, JSON_PRETTY_PRINT));
 
-    header("Location: http://dm.bigteddy.ro/dmscreen.php");
+    header("Location: $refreshLink");
 }
 
 if (isset($_POST['create'])) {
@@ -101,7 +104,7 @@ if (isset($_POST['create'])) {
 
     file_put_contents($path . $selectedCampaign, json_encode($players, JSON_PRETTY_PRINT));
 
-    header("Location:http://dm.bigteddy.ro/dmscreen.php");
+    header("Location:$refreshLink");
 }
 
 if (isset($_POST['remove'])) {
@@ -120,7 +123,7 @@ if (isset($_POST['remove'])) {
     }
 
     file_put_contents($path . $selectedCampaign, json_encode($newPlayers, JSON_PRETTY_PRINT));
-    header("Location:http://dm.bigteddy.ro/dmscreen.php");
+    header("Location:$refreshLink");
 }
 
 if (isset($_POST['createCampaignName'])) {
@@ -128,12 +131,12 @@ if (isset($_POST['createCampaignName'])) {
     fwrite($newFile, '[]');
     fclose($newFile);
     $_SESSION['selectedCampaign'] = $_POST['createCampaignName'];
-    header("Location:http://dm.bigteddy.ro/dmscreen.php");
+    header("Location:$refreshLink");
 }
 
 if (isset($_POST['selectedCampaign'])) {
     $_SESSION['selectedCampaign'] = $_POST['selectedCampaign'];
-    header("Location:http://dm.bigteddy.ro/dmscreen.php");
+    header("Location:$refreshLink");
 }
 
 ?>
@@ -303,7 +306,7 @@ if (isset($_POST['selectedCampaign'])) {
                 data-target="#navbarCustom">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a href="http://dm.bigteddy.ro/dmscreen.php" class="navbar-brand">DM Screen</a>
+        <a href="$refreshLink" class="navbar-brand">DM Screen</a>
         <div class="navbar-collapse collapse" id="navbarCustom">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">

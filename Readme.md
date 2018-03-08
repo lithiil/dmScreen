@@ -8,11 +8,15 @@ Now, It may not be perfect for everyone but it is for me, I needed something tha
 the stats of my players on half screen in a clean and easy to read manner (If you have a 
 1080P screen, open this in a browser and put it on half screen, it fits perfectly!).
 
+**Some input fields can automatically add or subtract the values found in them. Please read the readme to find out how!**
+
 This is an example of how my screen looks when DM-ing:
 
 ![DMG](readmePics/layout.PNG)
 
-**First Step**
+**First Steps**
+
+- **Change the $refreshLink variable in the dmscreen.php (line 8) with the link to the dm screen page location**
 
 Create a new campaign! To to this, click on Campaigns on the navbar, click on Create campaign
 Write a name in the input and press the create button 
